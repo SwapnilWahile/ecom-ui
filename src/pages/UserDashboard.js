@@ -49,12 +49,6 @@ export default function UserDashboard() {
             <div className="col-md-4 col-sm-6 mb-4" key={p.id}>
               <div className="card h-100 shadow-sm">
 
-                <img
-                  src=""
-                  className="card-img-top m-2"
-                  alt={p.name}
-                />
-
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{p.name}</h5>
                   <p className="card-text fw-bold">₹{p.price}</p>
