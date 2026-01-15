@@ -28,8 +28,8 @@ export default function Navbar() {
                   Dashboard
                 </Link>
 
-                <Link className="btn btn-sm btn-light me-2" to="/add-product">
-                  Add Product
+                <Link className="btn btn-sm btn-light me-2" to="/admin-products">
+                  Products
                 </Link>
               </>
             )}

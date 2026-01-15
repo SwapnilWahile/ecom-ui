@@ -8,6 +8,7 @@ import AddProduct from "./pages/AddProduct";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import AdminRoute from "./components/AdminRoute";
+import AdminProducts from "./pages/AdminProducts";
 
 export default function App() {
   return (
@@ -27,10 +28,27 @@ export default function App() {
               </AdminRoute>
             }
           />
+          <Route
+            path="/admin-products"
+            element={
+              <AdminRoute>
+                <AdminProducts />
+              </AdminRoute>
+            }
+          />
+
+          <Route
+            path="/add-product"
+            element={
+              <AdminRoute>
+                <AddProduct />
+              </AdminRoute>
+            }
+          />
 
           {/* USER */}
           <Route path="/user" element={<UserDashboard />} />
-          <Route path="/add-product" element={<AddProduct />} />
+          {/* <Route path="/add-product" element={<AddProduct />} /> */}
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>

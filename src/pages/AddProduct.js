@@ -20,7 +20,7 @@ export default function AddProduct() {
     localStorage.setItem("products", JSON.stringify(products));
     alert("Product added successfully");
 
-    navigate("/admin");
+    navigate("/admin-products");
   };
 
   return (

@@ -112,14 +112,6 @@ export default function AdminDashboard() {
         </div>
       )}
 
-      <div className="d-flex justify-content-end mt-3">
-        <button
-          className="btn btn-primary"
-          onClick={() => navigate("/add-product")}
-        >
-          Add Product
-        </button>
-      </div>
     </div>
   );
 }
